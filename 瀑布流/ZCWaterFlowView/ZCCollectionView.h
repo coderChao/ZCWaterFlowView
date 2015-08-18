@@ -53,9 +53,8 @@
  */
 @property (nonatomic,assign) int  columnCount;
 
-/**
- *  代理
- */
-@property (nonatomic,weak) id<ZCCollectionViewDelagate> delegate;
+
+@property (nonatomic,weak) id<ZCCollectionViewDelagate>  delagate;
+
 
 @end

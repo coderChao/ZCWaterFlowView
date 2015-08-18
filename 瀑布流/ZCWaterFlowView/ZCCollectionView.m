@@ -16,8 +16,6 @@
 
 @implementation ZCCollectionView
 
-@dynamic delegate;
-
 + (instancetype)collectionViewWithFrame:(CGRect)frame
 {
     return [[self alloc] initWithFrame:frame];
@@ -47,7 +45,7 @@
 }
 - (CGFloat)waterflowLayout:(ZCWaterFlowLayout *)layout heightForWidth:(CGFloat)width atIndexPath:(NSIndexPath *)indexPath
 {
-    return  [self.delegate collectionView:self heightForWidth:width atIndexPath:indexPath];
+    return  [self.delagate collectionView:self heightForWidth:width atIndexPath:indexPath];
 }
 
 - (void)setRowMargin:(CGFloat)rowMargin
