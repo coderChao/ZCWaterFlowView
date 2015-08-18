@@ -43,7 +43,8 @@ static NSString *const ID = @"shop";
     
     ZCCollectionView *collectionView = [ZCCollectionView collectionViewWithFrame:self.view.bounds];
     
-    collectionView.delagate = self;
+    
+    collectionView.delegate = self;
     collectionView.dataSource = self;
     [collectionView registerNib:[UINib nibWithNibName:@"ShopCell" bundle:nil] forCellWithReuseIdentifier:ID];
     [self.view addSubview:collectionView];
@@ -62,7 +63,7 @@ static NSString *const ID = @"shop";
     });
 }
 
-#pragma mark -ZCCollectionViewDelagate
+#pragma mark -ZCCollectionViewDelegate
 - (CGFloat)collectionView:(ZCCollectionView *)collectionView heightForWidth:(CGFloat)width atIndexPath:(NSIndexPath *)indexPath
 {
     Shop *shop = self.shops[indexPath.item];
