@@ -12,7 +12,7 @@
 #import "SDWebImageManager.h"
 #import "ZCCollectionView.h"
 
-@interface ViewController ()<UICollectionViewDataSource,ZCCollectionViewDelagate>
+@interface ViewController ()<UICollectionViewDataSource,ZCCollectionViewDelegate>
 
 @property (nonatomic,strong) ZCCollectionView *collectionView;
 

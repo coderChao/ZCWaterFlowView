@@ -9,7 +9,7 @@
 
 
 @class ZCCollectionView;
-@protocol ZCCollectionViewDelagate <UICollectionViewDelegate>
+@protocol ZCCollectionViewDelegate <UICollectionViewDelegate>
 
 /**
  *  根据给定的indexPath和列的宽度，返回一个等比例的图片高度，让图片显示的时候不会拉伸，等比例缩放
@@ -56,6 +56,6 @@
 /**
  *  代理
  */
-@property (nonatomic,weak) id<ZCCollectionViewDelagate> delegate;
+@property (nonatomic,weak) id<ZCCollectionViewDelegate> delegate;
 
 @end
